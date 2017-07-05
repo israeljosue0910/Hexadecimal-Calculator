@@ -1,52 +1,78 @@
-# Prerequisites
-*.d
 
-# Object files
+# Created by https://www.gitignore.io/api/iar,windows,assembler
+
+### Assembler ###
+*.[sS]
+*.bc
+
+### IAR ###
+# Compiled binaries
 *.o
-*.ko
-*.obj
+*.bin
 *.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
 *.hex
+*.map
+*.out
+*.obj
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# Trash
+*.bak
+thumbs.db
+*.~*
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# IAR Settings  
+**/settings/*.crun  
+**/settings/*.dbgdt  
+**/settings/*.cspy  
+**/settings/*.cspy.*  
+**/settings/*.xcl  
+**/settings/*.dni  
+**/settings/*.wsdt  
+**/settings/*.wspos  
+
+# IAR Debug Exe  
+**/Exe/*.sim  
+
+# IAR Debug Obj  
+**/Obj/*.pbd  
+**/Obj/*.pbd.*  
+**/Obj/*.pbi  
+**/Obj/*.pbi.*  
+
+# IAR project "Debug" directory
+Debug/
+
+# IAR project "Release" directory
+Release/
+
+# IAR project settings directory
+settings/
+
+# IAR backup files
+Backup*
+
+# IAR .dep files
+*.dep
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.gitignore.io/api/iar,windows,assembler
